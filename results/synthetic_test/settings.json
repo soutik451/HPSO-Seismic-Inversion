@@ -1,0 +1,19 @@
+{
+  "wavelet": "Ricker 30.0 Hz",
+  "lambda": 0.5,
+  "bound": 0.45,
+  "pso": {
+    "n_particles": 50,
+    "n_iter": 100,
+    "w_start": 0.9,
+    "w_end": 0.4,
+    "c1": 1.5,
+    "c2": 1.5,
+    "vmax_frac": 0.2,
+    "init_std": 0.15,
+    "band": 0.32
+  },
+  "qnm_iter": 300,
+  "pso_only_iter": 300,
+  "repeats": 5
+}

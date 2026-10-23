@@ -1,0 +1,148 @@
+{
+  "section_shape": [
+    201,
+    101
+  ],
+  "well_cdp": 1051,
+  "wavelet_candidates_tie_CC": {
+    "statistical": 0.9737,
+    "Ricker 15 Hz": 0.7087,
+    "Ricker 20 Hz": 0.9445,
+    "Ricker 25 Hz": 0.9955,
+    "Ricker 30 Hz": 0.9581,
+    "Ricker 35 Hz": 0.8784,
+    "Ricker 40 Hz": 0.787,
+    "Ricker 45 Hz": 0.6982,
+    "Ricker 50 Hz": 0.6184
+  },
+  "wavelet": "Ricker 25 Hz, phase 20 deg, shift 0 samples, least-squares scale (well tie CC 0.995)",
+  "tie_section_trace": {
+    "CC": 0.9879637607357298,
+    "best_CC_shift_pm80ms": 0.9894744620451752,
+    "best_shift_samples": 0
+  },
+  "tie_well_tied_trace": {
+    "CC": 0.9949993409046408
+  },
+  "lambda": {
+    "rule": "discrepancy principle on the well-tied trace",
+    "noise_level": 0.00898377542699813,
+    "lambda": 3.0884687300106273,
+    "scan_lambda_misfit": [
+      [
+        0.5,
+        0.006310095693131489
+      ],
+      [
+        1,
+        0.00667258751320995
+      ],
+      [
+        2,
+        0.007550929817373578
+      ],
+      [
+        4,
+        0.009836564728722299
+      ],
+      [
+        8,
+        0.015841362299500113
+      ],
+      [
+        16,
+        0.030755521592230498
+      ],
+      [
+        32,
+        0.06445954088128183
+      ],
+      [
+        64,
+        0.13316767489903644
+      ],
+      [
+        128,
+        0.2550744923942494
+      ]
+    ]
+  },
+  "caseA": {
+    "mean_misfit_initial": 0.9936044940597689,
+    "mean_misfit_after_pso": 0.14620617044552964,
+    "mean_misfit_final": 0.021289382013000988,
+    "synthetic_vs_observed_CC_mean": 0.9885919545395065,
+    "synthetic_vs_observed_CC_well": 0.9892223845488397
+  },
+  "caseB": {
+    "misfit_initial": 0.991155274212252,
+    "misfit_after_pso": 0.16339700041043156,
+    "misfit_final": 0.00871778586842437,
+    "synthetic_vs_observed_CC": 0.9958509966296554
+  },
+  "well_comparison": {
+    "Initial model (10 Hz)": {
+      "CC": 0.7839,
+      "R2": 0.6131,
+      "RMSE": 486.5052,
+      "MAE": 369.2506,
+      "MAPE_%": 3.8276,
+      "NRMSE": 0.1225,
+      "CC_0-80Hz": 0.8068,
+      "R2_0-80Hz": 0.6495
+    },
+    "HPSO - section trace (case A)": {
+      "CC": 0.9591,
+      "R2": 0.9186,
+      "RMSE": 223.201,
+      "MAE": 173.4056,
+      "MAPE_%": 1.7915,
+      "NRMSE": 0.0562,
+      "CC_0-80Hz": 0.9847,
+      "R2_0-80Hz": 0.9684
+    },
+    "PSO only stage - section trace": {
+      "CC": 0.7401,
+      "R2": 0.4311,
+      "RMSE": 589.955,
+      "MAE": 485.9186,
+      "MAPE_%": 4.976,
+      "NRMSE": 0.1485,
+      "CC_0-80Hz": 0.7643,
+      "R2_0-80Hz": 0.4634
+    },
+    "HPSO - well-tied trace (case B)": {
+      "CC": 0.9558,
+      "R2": 0.9125,
+      "RMSE": 231.4169,
+      "MAE": 183.5611,
+      "MAPE_%": 1.8903,
+      "NRMSE": 0.0583,
+      "CC_0-80Hz": 0.9822,
+      "R2_0-80Hz": 0.9635
+    }
+  },
+  "section_vs_true_model": {
+    "Initial model": {
+      "CC_section": 0.7036,
+      "R2_section": 0.4936,
+      "RMSE_section": 564.4,
+      "mean_trace_CC": 0.7043,
+      "min_trace_CC": 0.6276
+    },
+    "After PSO": {
+      "CC_section": 0.7018,
+      "R2_section": 0.374,
+      "RMSE_section": 627.5,
+      "mean_trace_CC": 0.7072,
+      "min_trace_CC": 0.5691
+    },
+    "HPSO": {
+      "CC_section": 0.9233,
+      "R2_section": 0.8525,
+      "RMSE_section": 304.6,
+      "mean_trace_CC": 0.9244,
+      "min_trace_CC": 0.8872
+    }
+  }
+}
